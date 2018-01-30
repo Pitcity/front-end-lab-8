@@ -20,16 +20,20 @@ img {
   float: left; }
 
 table {
-  background-color: #94a34e;
+  background-color: #04790e;
   margin-bottom: 20px; }
   table caption {
     text-align: right; }
   table th {
-    background-color: #fff178;
-    padding: 10px; }
+    background-color: #94a34e;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase; }
   table td {
-    border-bottom: #fff178 solid 1px;
+    border-bottom: #94a34e solid 1px;
     padding: 10px; }
+  table a {
+    color: #f5c70f; }
 
 #content {
   padding: 2px 20px;
@@ -52,16 +56,20 @@ table {
     margin-right: 20px;
     float: left; }
   #content table {
-    background-color: #94a34e;
+    background-color: #04790e;
     margin-bottom: 20px; }
     #content table caption {
       text-align: right; }
     #content table th {
-      background-color: #fff178;
-      padding: 10px; }
+      background-color: #94a34e;
+      padding: 10px;
+      color: black;
+      text-transform: uppercase; }
     #content table td {
-      border-bottom: #fff178 solid 1px;
+      border-bottom: #94a34e solid 1px;
       padding: 10px; }
+    #content table a {
+      color: #f5c70f; }
 
 .brief {
   background-color: #fff178;

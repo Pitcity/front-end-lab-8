@@ -44,10 +44,15 @@ $mainPadding: 20px;
     th {
       background-color: $tableHeaderColor;
       padding: $mainPadding/2;
+      color: black;
+      text-transform: uppercase;
     }
     td {
       border-bottom: $tableHeaderColor solid 1px;
       padding: $mainPadding/2;
+    }
+    a {
+      color: $linkColor;
     }
     margin-bottom: $mainPadding;
   }

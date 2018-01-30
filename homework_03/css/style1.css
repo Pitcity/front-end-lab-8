@@ -36,10 +36,14 @@ body {
       text-align: right; }
     #content table th {
       background-color: #808080;
-      padding: 10px; }
+      padding: 10px;
+      color: black;
+      text-transform: uppercase; }
     #content table td {
       border-bottom: #808080 solid 1px;
       padding: 10px; }
+    #content table a {
+      color: 3d70a1; }
 
 .brief {
   background-color: #fadcba;
