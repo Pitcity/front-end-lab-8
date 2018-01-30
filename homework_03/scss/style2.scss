@@ -1,2 +1,12 @@
 @import "variables2";
 @import "main";
+
+@include bodyStyle;
+@include img;
+@include tableStyle;
+@include contentStyles;
+
+.brief {
+  @include innerBlockStyle;
+  @include leftBlock;
+}

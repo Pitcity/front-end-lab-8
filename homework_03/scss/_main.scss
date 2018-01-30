@@ -1,11 +1,40 @@
-@import "variables1";
-
 $mainPadding: 20px;
 
 @mixin headersColor{
   color: $textColor;
 }
 
+@mixin bodyStyle {
+  body {
+    background-color: $bodyBackground;
+  }
+}
+
+@mixin contentStyles {
+  #content {
+    padding: $mainPadding/10 $mainPadding;
+    width: 960px;
+    margin: 0 auto;
+    background: $contentBackground;
+    color: $contentTestColor;
+    h1 {
+      @include headersColor;
+      text-align: center;
+    }
+    h2 {
+      @include headersColor;
+    }
+    @include img;
+    @include tableStyle;
+  }
+}
+@mixin innerBlockStyle {
+  background-color: $innerBlockColor;
+  width: $innerBlockWidth;
+  padding: $mainPadding;
+  color: black;
+  margin-bottom: $mainPadding;
+}
 @mixin tableStyle{
   table {
     background-color: $tableBackColor;
@@ -20,7 +49,7 @@ $mainPadding: 20px;
       border-bottom: $tableHeaderColor solid 1px;
       padding: $mainPadding/2;
     }
-    padding-bottom: $mainPadding;
+    margin-bottom: $mainPadding;
   }
 }
 
@@ -32,4 +61,17 @@ $mainPadding: 20px;
 @mixin  rightBlock {
   margin-left: $mainPadding;
   float: right;
+}
+
+@mixin img{
+  img{
+    border: $borderColor solid 2px;
+    padding: 2px;
+  }
+  .img-right {
+    @include rightBlock;
+  }
+  .img-left {
+    @include leftBlock;
+  }
 }
