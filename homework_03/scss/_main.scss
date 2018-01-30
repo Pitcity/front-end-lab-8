@@ -1,0 +1,35 @@
+@import "variables1";
+
+$mainPadding: 20px;
+
+@mixin headersColor{
+  color: $textColor;
+}
+
+@mixin tableStyle{
+  table {
+    background-color: $tableBackColor;
+    caption {
+      text-align: right;
+    }
+    th {
+      background-color: $tableHeaderColor;
+      padding: $mainPadding/2;
+    }
+    td {
+      border-bottom: $tableHeaderColor solid 1px;
+      padding: $mainPadding/2;
+    }
+    padding-bottom: $mainPadding;
+  }
+}
+
+@mixin leftBlock {
+  margin-right: $mainPadding;
+  float:left;
+}
+
+@mixin  rightBlock {
+  margin-left: $mainPadding;
+  float: right;
+}

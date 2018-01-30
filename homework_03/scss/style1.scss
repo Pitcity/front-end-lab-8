@@ -1,0 +1,37 @@
+@import "variables1";
+@import "main";
+
+body {
+  background-color: $bodyBackground;
+}
+
+#content {
+  padding: $mainPadding/10 $mainPadding;
+  width: 960px;
+  margin: 0 auto;
+  background: $contentBackground;
+  h1 {
+    @include headersColor;
+    text-align: center;
+  }
+  h2 {
+    @include headersColor;
+  }
+  img{
+    border: $borderColor solid 2px;
+    padding: 2px;
+  }
+  .img-right {
+    @include rightBlock;
+  }
+  .img-left {
+    @include leftBlock;
+  }
+  @include tableStyle;
+  .brief {
+    background-color: $innerBlockColor;
+    width: $innerBlockWidth;
+    padding: $mainPadding;
+    @include leftBlock;
+  }
+}
