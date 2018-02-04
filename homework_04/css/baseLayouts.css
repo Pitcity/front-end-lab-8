@@ -13,12 +13,12 @@ header {
 
 body {
     margin: 0;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     overflow-y: scroll;
 }
 
 .topTitle {
     text-transform: uppercase;
+    font-size: large;
 }
 
 .innerContainer {
@@ -54,6 +54,10 @@ body {
     padding-bottom: 5px;
 }
 
+.topSmallerText {
+    font-size: smaller;
+}
+
 .mainTitle sup {
     font-size: 0.25em;
     vertical-align: text-top;
@@ -65,6 +69,7 @@ body {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 15px 55px;
+    border: 1px white solid;
 }
 
 .subTitle {
@@ -75,6 +80,7 @@ body {
     width: 450px;
     display: inline-block;
     margin: 100px 0;
+    font-size: larger;
     vertical-align: text-top;
 }
 
@@ -89,12 +95,13 @@ body {
 
 #show {
     padding: 100px 14% 100px 11%;
-    background: lightgrey;
+    background: #f3f3f3;
 }
 
 .centerText {
     text-align: center;
     margin-bottom: 100px;
+    font-size: larger;
 }
 
 .articles > div {
@@ -117,21 +124,26 @@ body {
 }
 
 .pic1 {
-    background: url("../img/sample.jpg") center black;
+    background: url("../img/sample.jpg");
 }
 
 .pic2 {
-    background: url("../img/sample2.jpg") center;
+    background: url("../img/sample2.jpg");
 }
 
 .pic3 {
-    background: url("../img/sample3.jpg") center;
+    background: url("../img/sample3.jpg");
+}
+
+.pic {
+    background-position: center;
+    background-size: cover;
 }
 
 input[type='email'] {
     padding: 10px 7%;
     width: 60%;
-    background: lightgrey;
+    background: #f3f3f3;
     border: 2px grey solid;
     border-right: none;
 }
@@ -172,8 +184,8 @@ input[type='submit'] {
     top: 20px;
     right: 20px;
     width: 50px;
-    border: 1px white solid;
-    padding: 10px;
+    border: 2px white solid;
+    padding: 5px;
     background: rgba(0, 0, 0, 0.6);
 }
 
@@ -186,10 +198,16 @@ span {
 }
 
 #subscribe {
-    padding: inherit;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 40px;
     background: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.articleDate {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 #contacts {
@@ -204,7 +222,6 @@ span {
     display: inline-block;
     min-height: 100px;
     width: 300px;
-    text-align-all: justify;
 }
 
 .flexBlock p {
@@ -216,11 +233,14 @@ span {
 }
 
 footer {
-    padding: 3% 14% 2% 11%;
+    padding-top: 20px;
+    margin: 3% 14% 2% 11%;
+    border-top: 1px grey solid;
 }
 
 .authorRight {
     color: grey;
+    font-size: small;
 }
 
 .footerMenu a {
@@ -228,8 +248,4 @@ footer {
     text-decoration: none;
     margin: 0 10px;
     padding: 5px;
-}
-
-.innerContainer {
-    font-size: small;
 }
