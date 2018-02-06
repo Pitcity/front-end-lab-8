@@ -62,7 +62,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-right: 20px;
 }
 
 .article {
@@ -70,9 +69,8 @@ body {
     padding: 10px;
     margin-right: 15px;
     flex-grow: 1;
-    min-width: 260px;
     margin-bottom: 20px;
-    flex-basis: 30%;
+    flex-basis: 25%;
 }
 
 .article h1 {
@@ -88,13 +86,13 @@ body {
 }
 
 .footerMenu a {
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     padding-right: 20px;
 }
 
-.underlined {
-    text-decoration: underline !important;
+.footerMenu a:hover {
+    text-decoration: none !important;
 }
 
 .footerMenu {
@@ -118,7 +116,6 @@ footer {
     .middleContainer {
         width: 100%;
         margin: 0 auto;
-        padding-left: 15px;
     }
 
     footer {
@@ -140,7 +137,9 @@ footer {
     }
 
     .article {
-        min-width: 250px;
+        flex-basis: 40%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     header img {
@@ -169,6 +168,7 @@ footer {
     .middleContainer {
         width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
 
     footer {
@@ -206,7 +206,7 @@ footer {
         font-size: 2em;
         margin-right: 10px;
         margin-left: 10px;
-        width: 100%;
+        width: 90%;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -219,10 +219,9 @@ footer {
     }
 
     header nav a {
-        border-top: 1px solid grey;
-        width: 100%;
+        border-top: 1px solid #ccc;
         display: list-item;
-        background: lightgrey;
+        background: #eee;
         text-align: left;
         padding-left: 20px;
     }
@@ -233,12 +232,12 @@ footer {
     }
 
     header nav a:last-child {
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid #ccc;
     }
 
-    #articles {
-        padding-left: 20px;
-        padding-right: 20px;
+    .article {
+        flex-basis: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
 }
