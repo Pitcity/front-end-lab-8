@@ -7,9 +7,6 @@ function validate(side1, side2, side3) {
     if ((side1 <= (side2 + side3)) && (side2 <= (side1 + side3)) && (side3 <= (side1 + side2))) {
         return true;
     }
-    console.log("side1: " + side1 + " sum = " + (side2 + side3) + " res: " + (side1 <= (side2 + side3)));
-    console.log("side2: " + side2 + " sum = " + (side1 + side3) + " res: " + (side2 <= (side1 + side3)));
-    console.log("side3: " + side3 + " sum = " + (side1 + side2) + " res: " + (side3 <= (side1 + side2)));
     console.log("Incorrect data. Is not a triangle. ");
     return false;
 }
