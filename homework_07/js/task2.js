@@ -33,13 +33,19 @@ if (confirm("Do you want to play a game?")) {
         let f = Math.round(Math.random() * range);
         while (attempts < 3) {
             attempts++;
-            if (attempts === 1) {
-                currentMax = maxPrice1;
-            } else if (attempts === 2) {
-                currentMax = maxPrice2;
-            } else if (attempts === 3) {
-                currentMax = maxPrice3;
-            }
+	    switch (attempts) {
+  	        case 1:
+    		    currentMax = maxPrice1;
+    		    break;
+		case 2:
+    		    currentMax = maxPrice2;
+    		    break;
+		case 3:
+    		    currentMax = maxPrice3;
+    		    break;
+  		default:
+		    currentMax = 0;
+	    }
             if (prompt(printInfo(), 0) == f) {
                 console.log("won " + currentMax + "$");
                 price += currentMax;
